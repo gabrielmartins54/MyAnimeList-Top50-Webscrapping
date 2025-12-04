@@ -37,12 +37,12 @@ for anime in find_animes:
     anime_score.append(score_tag)
 
 # Transforming results in a DataFrame
-
 top_anime_rankings = pd.DataFrame()
 top_anime_rankings['Rank'] = anime_ranking
 top_anime_rankings['Name'] = anime_names
 top_anime_rankings['Rating/Score'] = anime_score
 
+#Exporting results to csv
 top_anime_rankings.to_csv('AnimeRankings.csv', index=False)
     
     
